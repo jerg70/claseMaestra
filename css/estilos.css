@@ -1,0 +1,239 @@
+*{
+    margin:0px;
+    border: 0px;
+    padding: 0px;
+}
+
+
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Courier New', Courier, monospace;
+    color: aliceblue;
+    text-align: center;
+}
+
+p{
+    color:white;
+}
+
+body{
+    background-color: #02274F;
+}
+
+#textoAlado{
+    display:inline-block;
+    color: white;
+}
+
+header{
+    background-color:grey;
+    
+
+}
+
+.imagenHeader{
+    width: 250px;
+    height: 100px;
+    display:inline-block;
+}
+
+.nav_menu{
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: stretch; */
+    display: inline;
+    font-size:medium; 
+}
+
+.nav_menu_ul{
+    text-align: right;
+}
+
+.imagenYTexto{
+    display: block;
+    /* flex-direction: column;
+    /* flex-direction: column; */
+    /*align-items: center; */
+    /* padding-left: 25%; */
+    overflow: auto;
+}
+
+.imagenMentores{
+    display: block;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.imagenYTexto p{
+    text-align: center;
+}
+
+#textoAlado{
+    display: block;
+}
+
+li{
+    display: inline-block;
+}
+li a {
+    /* text-align: left; */
+    padding: 16px;
+    text-decoration: none;
+    color: white;
+  }
+  
+li a:hover {
+    background-color: #111111;
+  }
+
+  .nosotros_Box{
+    margin-top: 50px;
+  }
+
+  .videoDemo{
+      display: block;
+      margin-right: 800px;
+      margin-left: 650px;
+      padding: 2%;
+
+  }
+
+article{
+    text-align: center;
+}
+
+  .staff_box{
+      display: block;
+      padding: 1%;
+  }
+
+.parrafoSub{
+    display:block;
+    /* margin-left: 100px;
+    margin-right: 100px; */
+    text-align: center;
+}
+
+ol{
+    color: white;
+    display: block;
+    margin-right: 500px;
+    margin-left: 500px;
+    padding: 5%;
+    
+}
+
+ol li{
+    display: block;
+    text-align: center;
+    
+}
+
+#inscripcion a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin-right: 800px;
+    margin-left: 900px;
+    /* padding: 5%; */
+}
+
+
+
+.parrafoSub p{
+    padding: 1%;
+}
+
+  .imagenesDocentes{
+    display: inline-block;
+    padding: 5%;
+    margin-bottom: 0px;
+
+}
+
+.imagenMentor1, .imagenMentor2, .imagenMentor3, .imagenMentor4{
+  width: 400px;
+  height: 300px;
+  padding: 5px;
+}
+
+
+.captionDocentes{
+    display: inline-block;
+    text-align: center;
+
+}
+
+.textAlign{
+    text-align: center;
+}
+
+  form label{
+      color: white;
+  }
+
+
+
+.div_Contacto_form{
+    display:block;
+    /* flex-direction: column;
+    align-items: center;
+    justify-items: center; */
+    margin: 0px 30% 35% 25%;
+    padding: 5%;
+
+
+}
+  .container_form{
+    display: block;
+    border-style: dashed;
+    border-width: 5px;
+    border-color: white;
+    /* size: 15px; */
+    padding: 5%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .container_form label, input, select, textarea{
+      /* display:table-cell; */
+      display:block;
+      margin-right: auto;
+      margin-left: auto;
+      /* vertical-align:middle; */
+      
+  }
+  
+
+
+
+
+footer{
+    /* display: flex; */
+    position:fixed;
+    width: 100%;
+    height: 70px;
+    left: 0;
+    bottom: 0;
+    background-image:url(https://images.squarespace-cdn.com/content/v1/5d16d47fe65eba0001143f05/1562339567093-ECUYNXHN6FX40BE9D0WQ/footer-border.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+footer p{
+    text-align: center;
+    color: white;
+    /* text-shadow: #111111; */
+    font-weight: bold;
+    text-emphasis-color: black;
+}   
+
+footer p span{
+    background-color: #02274F;
+}   
+
+
