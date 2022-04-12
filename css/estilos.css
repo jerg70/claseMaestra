@@ -250,9 +250,9 @@ form label {
 
 .container_form {
     display: block;
-    border-style: dashed;
+    /* border-style: dashed;
     border-width: 5px;
-    border-color: white;
+    border-color: white; */
     /* size: 15px; */
     padding: 5%;
     margin: auto;
