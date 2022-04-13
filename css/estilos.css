@@ -270,6 +270,14 @@ textarea {
     /* vertical-align:middle; */
 }
 
+.input_Form{
+    margin-top: 5px;
+    padding: 5px;
+}
+::placeholder{
+    color:#111111;
+}
+
 footer {
     grid-area: footer;
     display: flex;
