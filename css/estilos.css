@@ -32,7 +32,7 @@ body {
     margin: 0px;
 }
 
-.contenedor {
+/* .contenedor {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: .2fr 1fr .4fr;
@@ -40,7 +40,7 @@ body {
         "header header header header"
         "main main main main"
         "footer footer footer footer";
-}
+} */
 
 #textoAlado {
     /* display:inline-block; */
@@ -125,11 +125,17 @@ li a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    grid-area: main;
+    justify-content: center;
 }
 
 .videoDemo {
     padding: 2%;
+    
+    
+    /* justify-content: center;
+    align-items: center; */
+    /* margin-left: 600px; */
+    
 
 }
 
@@ -301,7 +307,7 @@ footer p {
 
 
 /*TABLET - Aplicado a INDEX y Contacto*/
-@media screen and (max-width:768px) {
+@media screen and (max-width:768px and min-width:481px) {
     /* .contenedor {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: .2fr 1fr .4fr;
@@ -319,10 +325,18 @@ footer p {
         flex-wrap: nowrap;
     } */
 
+    .videoDemo{
+        margin-left: 60px; 
+        align-items: center;
+        align-content: center;
+    }
+
+
     .imagenMentores {
         width: 400px;
         height: 250px;
     }
+
 
     .imagenYTexto {
         flex-wrap: nowrap;
@@ -336,6 +350,14 @@ footer p {
     height: 220px;
     padding: 5px;
 }
+
+
+
+
+    .nosotros_Box p  {
+        text-align: center;
+        margin-left: 120px;
+    }
 
 /* .div_Contacto_form{
     margin: 0px;
@@ -395,8 +417,9 @@ footer p {
     }
 
     .videoDemo iframe {
-        width: 320x;
-        height: 250px;
+        width: 250px;
+        height: 200px;
+        /* margin-left: 15px;  */
     }
 
     .imagenesDocentes{
