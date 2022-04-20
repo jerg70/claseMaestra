@@ -1,3 +1,5 @@
+@import "variables";
+
 * {
     margin: 0px;
     border: 0px;
@@ -26,39 +28,21 @@ p {
 }
 
 body {
-    /*background-color: #02274F;*/
     background-image: linear-gradient(blue, yellow);
-    /* margin-bottom: 150px; */
     margin: 0px;
 }
 
-/* .contenedor {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: .2fr 1fr .4fr;
-    grid-template-areas:
-        "header header header header"
-        "main main main main"
-        "footer footer footer footer";
-} */
-
 #textoAlado {
-    /* display:inline-block; */
     color: white;
 }
 
 header {
-    /* grid-area: header; */
     padding: 5px;
-    /* background-color: black; */
-    /* display: flex;
-    flex-direction: row; */
 }
 
 .imagenHeader {
     width: 250px;
     height: 100px;
-    /* display:inline-block; */
 }
 
 .nav_menu {
@@ -80,9 +64,6 @@ header {
     padding: 10px;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    /* grid-area: main; */
-
 }
 
 .imagenMentores {
@@ -91,8 +72,12 @@ header {
     padding: 10px;
 }
 
-.imagenYTexto p {
-    text-align: center;
+.imagenYTexto{
+    p{
+        // text-align: center;
+        margin:0px;
+    }
+    
 }
 
 #textoAlado {
@@ -103,40 +88,35 @@ li {
     display: flex;
     flex-direction: row;
     justify-items: right;
-}
-
-li a {
-    /* text-align: left; */
-    padding: 16px;
+    a{
+        padding: 16px;
     text-decoration: none;
     color: white;
+        &:hover{
+            background-color: #111111;
+            background-size: 1%;
+        }
+    }
 }
 
-li a:hover {
-    background-color: #111111;
-    background-size: 1%;
-}
 
 .nosotros_Box {
-    margin-top: 50px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    padding: 10px;
+    // margin-top: 50px;
+    // margin-bottom: 15px;
+    // padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
+    p{
+        text-align: center;
+        margin-right: 100px;    
+    }
 }
 
 .videoDemo {
     padding: 2%;
-    
-    
-    /* justify-content: center;
-    align-items: center; */
-    /* margin-left: 600px; */
-    
-
 }
 
 iframe{
@@ -147,8 +127,9 @@ article {
     text-align: center;
 }
 
-.staff_box {
+@import "clases";
 
+.staff_box {
     grid-area: main;
     display: flex;
     flex-direction: column;
@@ -160,32 +141,6 @@ article {
     text-align: center;
 }
 
-ol {
-    color: white;
-    display: block;
-    margin-right: 500px;
-    margin-left: 500px;
-    padding: 5%;
-
-}
-
-ol li {
-    display: block;
-    text-align: center;
-
-}
-
-#inscripcion a {
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    margin-right: 800px;
-    margin-left: 900px;
-    /* padding: 5%; */
-}
-
-
-
 .parrafoSub p {
     padding: 1%;
 }
@@ -196,7 +151,6 @@ ol li {
     align-content: center;
     align-items: center;
     justify-content: center;
-    /* padding: 5%; */
     margin-bottom: 0px;
 }
 
@@ -224,14 +178,9 @@ ol li {
     animation-delay: 4s;
 }
 
-/* .imagenesDocentes :hover{ 
-    transform: scale(1.1,1.1);
-} */
-
 .captionDocentes {
     display: inline-block;
     text-align: center;
-
 }
 
 .textAlign {
@@ -242,23 +191,14 @@ form label {
     color: white;
 }
 
-
-
 .div_Contacto_form {
     display: block;
-    /* flex-direction: column;
-    align-items: center;
-    justify-items: center; */
     margin: 0px 30% 0 25%;
     padding: 2%;
 }
 
 .container_form {
     display: block;
-    /* border-style: dashed;
-    border-width: 5px;
-    border-color: white; */
-    /* size: 15px; */
     padding: 5%;
     margin: auto;
     text-align: center;
@@ -268,11 +208,9 @@ form label {
 input,
 select,
 textarea {
-    /* display:table-cell; */
     display: block;
     margin-right: auto;
     margin-left: auto;
-    /* vertical-align:middle; */
 }
 
 .input_Form{
@@ -284,23 +222,17 @@ textarea {
 }
 
 footer {
-    /* grid-area: footer; */
     display: flex;
     flex-direction: row;
     align-content: center;
     align-items: center;
     justify-content: center;
-    /*left: 0;
-    bottom: 0; */
-    background-color: black;
-    /* background-image:url(https://images.squarespace-cdn.com/content/v1/5d16d47fe65eba0001143f05/1562339567093-ECUYNXHN6FX40BE9D0WQ/footer-border.png);
-    background-repeat: no-repeat; */
+    background-color: $colorFooter;
 }
 
 footer p {
     text-align: center;
     color: white;
-    /* text-shadow: #111111; */
     font-weight: bold;
     text-emphasis-color: black;
 }
@@ -308,28 +240,18 @@ footer p {
 
 /*TABLET - Aplicado a INDEX y Contacto*/
 @media screen and (max-width:768px) and (min-width:481px) {
-    /* .contenedor {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: .2fr 1fr .4fr;
-        grid-template-areas:
-            "header header"
-            "main main"
-            "footer footer";
-    } */
-
-    /* header {
-        background-color: rgb(175, 175, 175);
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: nowrap;
-    } */
 
     .videoDemo{
-        margin-left: 60px; 
+        // margin-left: 60px; 
         align-items: center;
         align-content: center;
     }
+
+    .miniImgClase{
+        width: 200px;
+        height: 100px;
+    }
+}
 
 
     .imagenMentores {
@@ -351,43 +273,22 @@ footer p {
     padding: 5px;
 }
 
-
-
-
     .nosotros_Box p  {
         text-align: center;
         margin-left: 120px;
     }
 
-/* .div_Contacto_form{
-    margin: 0px;
-} */
-
     footer {
-        background-color: rgb(175, 175, 175);
         flex-wrap: nowrap;
+        p{
+            color: black;
+            font-weight: bold;
+        }
     }
 
-    footer p {
-        color: black;
-        font-weight: bold;
-    }
-}
 
 /*MOVIL Aplicado a INDEX, Contacto*/
 @media screen and (max-width:480px) {
-    /* .contenedor {
-        grid-template-columns: 1fr;
-        grid-template-rows: .2fr 1fr .4fr;
-        grid-template-areas:
-            "header"
-            "main"
-            "footer";
-    } */
-
-    /* header {
-        background-color: rgb(0, 0, 0);
-    } */
 
     .imagenHeader {
         display: none;
@@ -412,16 +313,22 @@ footer p {
 
     .imagenYTexto {
         flex-wrap: nowrap;
-        /* align-items: center; */
-        /* justify-content: center; */
     }
 
     .videoDemo iframe {
         width: 250px;
         height: 200px;
-        /* margin-left: 15px;  */
     }
 
+    .miniImgClase{
+        display:none;
+    }
+
+    ol{
+        padding: 0%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
     .imagenesDocentes{
         flex-direction: column;
     }
@@ -432,11 +339,10 @@ footer p {
 
 
     footer {
-        background-color: rgb(0, 0, 0);
+        p{
+            color: white;
+            font-weight: bold;            
+        }
     }
 
-    footer p {
-        color: white;
-        font-weight: bold;
-    }
 }

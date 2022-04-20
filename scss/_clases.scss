@@ -1,0 +1,35 @@
+ol{
+    color: white;
+    display: block;
+    padding: 5%;    
+        li{
+            display: inline-block;
+        }
+}
+
+#inscripcion a {
+    color: white;
+    text-decoration: none;
+}
+
+.miniImgClase{
+    width: 250px;
+    height: 150px;
+}
+
+.texto_clases_1,.texto_clases_2{
+    padding: 1%;
+}
+
+ol{
+    padding: 1%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+// @media screen and (max-width:768px) and (min-width:481px) {
+//     .miniImgClase{
+//         width: 200px;
+//         height: 100px;
+//     }
+// }
