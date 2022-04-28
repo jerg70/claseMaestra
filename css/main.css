@@ -3,6 +3,24 @@
   border: 0px;
   padding: 0px; }
 
+.colorClase--leyes {
+  color: red; }
+
+.colorClase--progra {
+  color: white; }
+
+.colorClase--musica {
+  color: black; }
+
+.colorClase--diseno {
+  color: blue; }
+
+.colorClase--cine {
+  color: purple; }
+
+.colorClase--ventas {
+  color: brown; }
+
 html {
   font-family: Verdana, Geneva, Tahoma, sans-serif; }
 
@@ -23,8 +41,10 @@ body {
   background-image: linear-gradient(blue, yellow);
   margin: 0px; }
 
-#textoAlado {
-  color: white; }
+.textoAlado, .textAlign {
+  color: white;
+  text-align: center;
+  text-shadow: #111111; }
 
 header {
   padding: 5px; }
@@ -54,12 +74,14 @@ header {
 .imagenMentores {
   margin-left: 25%;
   margin-right: 25%;
-  padding: 10px; }
+  padding: 10px;
+  height: 450px !important;
+  width: 600px; }
 
 .imagenYTexto p {
   margin: 0px; }
 
-#textoAlado {
+.textoAlado, .textAlign {
   display: block; }
 
 li {
@@ -161,7 +183,7 @@ ol {
   text-align: center; }
 
 .textAlign {
-  text-align: center; }
+  font-size: x-large; }
 
 form label {
   color: white; }
@@ -212,8 +234,8 @@ footer p {
     align-items: center;
     align-content: center; }
   .miniImgClase {
-    width: 200px;
-    height: 100px; } }
+    height: 100px;
+    width: 200px; } }
 
 .imagenMentores {
   width: 400px;

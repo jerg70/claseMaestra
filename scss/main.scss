@@ -6,6 +6,28 @@
     padding: 0px;
 }
 
+//Usando Mapas para otorgar colores a los nombres de las diversas clases que existen en la pagina de Clases
+$colorTitles: (
+    leyes: red,
+    progra: white,
+    musica: black,
+    diseno: blue,
+    cine: purple,
+    ventas: brown
+);
+
+@each $x,$color in $colorTitles {
+    .colorClase--#{$x}
+    {
+        color:$color;
+    }
+}
+
+//Usando Mixins para modificar heigh y width de la imagen principal de index y de las imagenes de la página de "Clases".
+@mixin tamanos($width,$height){
+    height: $height;
+    width: $width;
+}
 
 
 html {
@@ -32,8 +54,10 @@ body {
     margin: 0px;
 }
 
-#textoAlado {
+.textoAlado {
     color: white;
+    text-align: center;
+    text-shadow: #111111;
 }
 
 header {
@@ -51,11 +75,19 @@ header {
     justify-content: space-around;
 }
 
-.nav_menu_ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
+//Utilizando Map Get para dar estilo a .nav_menu_ul
+$mapGetEjemplo: (
+    flexDisplay: flex,
+    flexDirection: row,
+    flexContent: flex-end,
+    flexAlign: center
+);
+
+.nav_menu_ul{
+    display: map-get($mapGetEjemplo, flexDisplay);
+    flex-direction: map-get($mapGetEjemplo, flexDirection);
+    justify-content: map-get($mapGetEjemplo, flexContent);
+    align-items: map-get($mapGetEjemplo, flexAlign);
 }
 
 .imagenYTexto {
@@ -70,6 +102,8 @@ header {
     margin-left: 25%;
     margin-right: 25%;
     padding: 10px;
+    @include tamanos(600px, 450px !important);
+    //height: 450px !important;
 }
 
 .imagenYTexto{
@@ -80,7 +114,7 @@ header {
     
 }
 
-#textoAlado {
+.textoAlado {
     display: block;
 }
 
@@ -183,8 +217,10 @@ article {
     text-align: center;
 }
 
+//Se utiliza Extends para heredar estilos de .textoAlado (index), para aplicar al parrafo con clase .textAling que requiere un formato similar a la primera clase pero se le cambia el tamaño a .textAlign.
 .textAlign {
-    text-align: center;
+   @extend .textoAlado;
+   font-size:x-large;
 }
 
 form label {
@@ -248,8 +284,9 @@ footer p {
     }
 
     .miniImgClase{
-        width: 200px;
-        height: 100px;
+        // width: 200px;
+        // height: 100px;
+        @include tamanos(200px,100px);
     }
 }
 
