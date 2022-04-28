@@ -81,9 +81,6 @@ header {
 .imagenYTexto p {
   margin: 0px; }
 
-.textoAlado, .textAlign {
-  display: block; }
-
 li {
   display: flex;
   flex-direction: row;
@@ -183,7 +180,8 @@ ol {
   text-align: center; }
 
 .textAlign {
-  font-size: x-large; }
+  font-size: xx-large;
+  font-weight: bold; }
 
 form label {
   color: white; }

@@ -114,9 +114,9 @@ $mapGetEjemplo: (
     
 }
 
-.textoAlado {
-    display: block;
-}
+// .textoAlado {
+//     display: block;
+// }
 
 li {
     display: flex;
@@ -217,10 +217,11 @@ article {
     text-align: center;
 }
 
-//Se utiliza Extends para heredar estilos de .textoAlado (index), para aplicar al parrafo con clase .textAling que requiere un formato similar a la primera clase pero se le cambia el tamaño a .textAlign.
+//Se utiliza Extends para heredar estilos de .textoAlado (index), para aplicar al parrafo con clase .textAling que requiere un formato similar a la primera clase pero se le cambia el tamaño a .textAlign y se le da texto en negritas.
 .textAlign {
    @extend .textoAlado;
-   font-size:x-large;
+   font-size:xx-large;
+   font-weight: bold;
 }
 
 form label {
