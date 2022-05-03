@@ -46,9 +46,6 @@ body {
   text-align: center;
   text-shadow: #111111; }
 
-header {
-  padding: 5px; }
-
 .imagenHeader {
   width: 250px;
   height: 100px; }
@@ -66,7 +63,7 @@ header {
 
 .imagenYTexto {
   margin-top: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 13rem;
   padding: 10px;
   display: flex;
   flex-direction: column; }
@@ -97,13 +94,17 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  margin-bottom: 5rem; }
   .nosotros_Box p {
     text-align: center;
     margin-right: 100px; }
 
-.videoDemo {
+.videoDemo, .videoDemo2 {
   padding: 2%; }
+
+.videoDemo2 {
+  display: none; }
 
 iframe {
   animation-duration: 2s; }
@@ -138,7 +139,8 @@ ol {
   grid-area: main;
   display: flex;
   flex-direction: column;
-  padding: 1%; }
+  padding: 1%;
+  margin-bottom: 15rem; }
 
 .parrafoSub {
   display: block;
@@ -222,43 +224,49 @@ footer {
 
 footer p {
   text-align: center;
-  color: white;
-  font-weight: bold;
-  text-emphasis-color: black; }
+  color: white !important;
+  font-weight: bold; }
+
+.clasesSection {
+  margin-bottom: 4rem; }
+
+.sectionContacto {
+  margin-bottom: 7rem; }
 
 /*TABLET - Aplicado a INDEX y Contacto*/
 @media screen and (max-width: 768px) and (min-width: 481px) {
-  .videoDemo {
+  .videoDemo, .videoDemo2 {
     align-items: center;
-    align-content: center; }
+    align-content: center;
+    display: unset; }
   .miniImgClase {
     height: 100px;
-    width: 200px; } }
-
-.imagenMentores {
-  width: 400px;
-  height: 250px; }
-
-.imagenYTexto {
-  flex-wrap: nowrap; }
-
-.imagenMentor1,
-.imagenMentor2,
-.imagenMentor3,
-.imagenMentor4 {
-  width: 180px;
-  height: 220px;
-  padding: 5px; }
-
-.nosotros_Box p {
-  text-align: center;
-  margin-left: 120px; }
-
-footer {
-  flex-wrap: nowrap; }
-  footer p {
-    color: black;
-    font-weight: bold; }
+    width: 200px; }
+  .imagenMentores {
+    width: 400px;
+    height: 250px; }
+  .imagenYTexto {
+    flex-wrap: nowrap;
+    margin-bottom: 13rem; }
+  .imagenMentor1,
+  .imagenMentor2,
+  .imagenMentor3,
+  .imagenMentor4 {
+    width: 180px;
+    height: 220px;
+    padding: 5px; }
+  .sectionContacto {
+    margin-bottom: 6.5rem; }
+  .nosotros_Box p {
+    text-align: center;
+    margin-left: 120px; }
+  footer {
+    flex-wrap: nowrap; }
+    footer p {
+      color: black;
+      font-weight: bold; }
+  .clasesSection {
+    margin-bottom: 12rem; } }
 
 /*MOVIL Aplicado a INDEX, Contacto*/
 @media screen and (max-width: 480px) {
@@ -276,8 +284,14 @@ footer {
     height: 180px;
     margin: 0px; }
   .imagenYTexto {
-    flex-wrap: nowrap; }
+    flex-wrap: nowrap;
+    margin-bottom: 9rem; }
+  .videoDemo, .videoDemo2 {
+    display: unset; }
   .videoDemo iframe {
+    width: 250px;
+    height: 200px; }
+  .videoDemo2 iframe {
     width: 250px;
     height: 200px; }
   .miniImgClase {
@@ -290,6 +304,20 @@ footer {
     flex-direction: column; }
   .div_Contacto_form {
     margin: 0px; }
+  .sectionContacto {
+    margin-bottom: 13rem; }
+  .nosotros_Box {
+    margin-bottom: 15rem; }
   footer p {
     color: white;
-    font-weight: bold; } }
+    font-weight: bold; }
+  .clasesSection {
+    margin-bottom: 23rem; }
+  .imagenMentor1,
+  .imagenMentor2,
+  .imagenMentor3,
+  .imagenMentor4 {
+    width: 300px;
+    height: 300px; }
+  .staff_box {
+    margin-bottom: 7rem; } }
