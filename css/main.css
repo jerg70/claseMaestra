@@ -30,7 +30,6 @@ h3,
 h4,
 h5,
 h6 {
-  /* font-family: 'Courier New', Courier, monospace;*/
   color: aliceblue;
   text-align: center; }
 
@@ -62,18 +61,22 @@ body {
   align-items: center; }
 
 .imagenYTexto {
-  margin-top: 15px;
+  padding-top: 3%;
   margin-bottom: 13rem;
   padding: 10px;
   display: flex;
   flex-direction: column; }
 
 .imagenMentores {
-  margin-left: 25%;
-  margin-right: 25%;
   padding: 10px;
   height: 450px !important;
   width: 600px; }
+
+.carousel-inner img {
+  margin: auto; }
+
+#carouselExampleControls {
+  margin-left: 17%; }
 
 .imagenYTexto p {
   margin: 0px; }
@@ -95,7 +98,8 @@ li {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 5rem; }
+  margin-bottom: 5rem;
+  padding-top: 2%; }
   .nosotros_Box p {
     text-align: center;
     margin-right: 100px; }
@@ -107,7 +111,7 @@ li {
   display: none; }
 
 iframe {
-  animation-duration: 2s; }
+  animation-duration: .5s; }
 
 article {
   text-align: center; }
@@ -140,7 +144,7 @@ ol {
   display: flex;
   flex-direction: column;
   padding: 1%;
-  margin-bottom: 15rem; }
+  margin-bottom: 16rem; }
 
 .parrafoSub {
   display: block;
@@ -166,16 +170,16 @@ ol {
   padding: 5px; }
 
 .imagenMentor1 {
-  animation-delay: 1s; }
+  animation-delay: .3s; }
 
 .imagenMentor2 {
-  animation-delay: 2s; }
+  animation-delay: .7s; }
 
 .imagenMentor3 {
-  animation-delay: 3s; }
+  animation-delay: 1s; }
 
 .imagenMentor4 {
-  animation-delay: 4s; }
+  animation-delay: 1.2s; }
 
 .captionDocentes {
   display: inline-block;
@@ -228,12 +232,16 @@ footer p {
   font-weight: bold; }
 
 .clasesSection {
-  margin-bottom: 4rem; }
+  margin-bottom: 4rem;
+  padding-top: 3%; }
+
+.comboDeClases {
+  padding-top: 2%; }
 
 .sectionContacto {
   margin-bottom: 7rem; }
 
-/*TABLET - Aplicado a INDEX y Contacto*/
+/*TABLET - Medi Queries*/
 @media screen and (max-width: 768px) and (min-width: 481px) {
   .videoDemo, .videoDemo2 {
     align-items: center;
@@ -243,7 +251,6 @@ footer p {
     height: 100px;
     width: 200px; }
   .imagenMentores {
-    width: 400px;
     height: 250px; }
   .imagenYTexto {
     flex-wrap: nowrap;
@@ -256,19 +263,25 @@ footer p {
     height: 220px;
     padding: 5px; }
   .sectionContacto {
-    margin-bottom: 6.5rem; }
+    margin-bottom: 7rem; }
   .nosotros_Box p {
     text-align: center;
     margin-left: 120px; }
+  .parrafoSub {
+    margin-top: 15px; }
+  .staff_box {
+    margin-bottom: 15rem; }
+  .textAlign {
+    margin-top: 15px; }
   footer {
     flex-wrap: nowrap; }
     footer p {
       color: black;
       font-weight: bold; }
   .clasesSection {
-    margin-bottom: 12rem; } }
+    margin-bottom: 10rem; } }
 
-/*MOVIL Aplicado a INDEX, Contacto*/
+/*MOVIL Queries*/
 @media screen and (max-width: 480px) {
   .imagenHeader {
     display: none; }
@@ -280,9 +293,10 @@ footer p {
     flex-direction: column;
     justify-content: center; }
   .imagenMentores {
-    width: 320px;
-    height: 180px;
+    height: 100px;
     margin: 0px; }
+  #carouselExampleControls {
+    margin-left: 0; }
   .imagenYTexto {
     flex-wrap: nowrap;
     margin-bottom: 9rem; }
@@ -294,7 +308,7 @@ footer p {
   .videoDemo2 iframe {
     width: 250px;
     height: 200px; }
-  .miniImgClase {
+  .comboDeClases {
     display: none; }
   ol {
     padding: 0%;
@@ -305,14 +319,17 @@ footer p {
   .div_Contacto_form {
     margin: 0px; }
   .sectionContacto {
-    margin-bottom: 13rem; }
+    margin-bottom: 14rem; }
   .nosotros_Box {
-    margin-bottom: 15rem; }
+    margin-bottom: 14rem;
+    padding-top: 10%; }
+  #inscripcion {
+    padding-top: 5%; }
   footer p {
     color: white;
     font-weight: bold; }
   .clasesSection {
-    margin-bottom: 23rem; }
+    margin-bottom: 8rem; }
   .imagenMentor1,
   .imagenMentor2,
   .imagenMentor3,
