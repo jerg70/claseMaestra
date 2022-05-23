@@ -166,7 +166,7 @@ article {
     display: flex;
     flex-direction: column;
     padding: 1%;
-    margin-bottom: 16rem;
+    margin-bottom: 10rem;
 }
 
 .parrafoSub {
@@ -265,6 +265,7 @@ footer {
     align-items: center;
     justify-content: center;
     background-color: $colorFooter;
+    padding-bottom: 5px;
 }
 
 footer p {
@@ -286,6 +287,31 @@ footer p {
     margin-bottom: 7rem;
 }
 
+.socialMediaIcons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    margin-left: 3%;
+    
+}
+
+.social1,.social2,.social3{
+    color: white;
+    margin-right: 15px;
+}
+
+.parrafoSub2{
+    margin-top: 10px;
+}
+
+.explicacionDocentes{
+    padding-top: 15px;
+}
+.gif1{
+    width:250px;
+    height:250px;
+}
 
 /*TABLET - Medi Queries*/
 @media screen and (max-width:768px) and (min-width:481px) {
@@ -309,7 +335,7 @@ footer p {
 
     .imagenYTexto {
         flex-wrap: nowrap;
-        margin-bottom: 13rem;
+        //margin-bottom: 13rem;
     }
 
     .imagenMentor1,
@@ -335,23 +361,19 @@ footer p {
     }
 
     .staff_box{
-        margin-bottom: 15rem;
+        margin-bottom: 10rem;
     }
 
     .textAlign{
         margin-top: 15px;
     }
 
-    footer {
-        flex-wrap: nowrap;
-        p{
-            color: black;
-            font-weight: bold;
-        }
-    }
-
     .clasesSection{
         margin-bottom: 10rem;
+    }
+
+    .socialMediaIcons{
+        z-index: 2;
     }
 
 }
@@ -427,7 +449,7 @@ footer p {
     }
 
     .nosotros_Box{
-        margin-bottom: 14rem;
+        margin-bottom: 13rem;
         padding-top: 10%;
     }
 
@@ -437,6 +459,7 @@ footer p {
 
 
     footer {
+
         p{
             color: white;
             font-weight: bold;            

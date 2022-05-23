@@ -144,7 +144,7 @@ ol {
   display: flex;
   flex-direction: column;
   padding: 1%;
-  margin-bottom: 16rem; }
+  margin-bottom: 10rem; }
 
 .parrafoSub {
   display: block;
@@ -224,7 +224,8 @@ footer {
   align-content: center;
   align-items: center;
   justify-content: center;
-  background-color: black; }
+  background-color: black;
+  padding-bottom: 5px; }
 
 footer p {
   text-align: center;
@@ -241,6 +242,27 @@ footer p {
 .sectionContacto {
   margin-bottom: 7rem; }
 
+.socialMediaIcons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  margin-left: 3%; }
+
+.social1, .social2, .social3 {
+  color: white;
+  margin-right: 15px; }
+
+.parrafoSub2 {
+  margin-top: 10px; }
+
+.explicacionDocentes {
+  padding-top: 15px; }
+
+.gif1 {
+  width: 250px;
+  height: 250px; }
+
 /*TABLET - Medi Queries*/
 @media screen and (max-width: 768px) and (min-width: 481px) {
   .videoDemo, .videoDemo2 {
@@ -253,8 +275,7 @@ footer p {
   .imagenMentores {
     height: 250px; }
   .imagenYTexto {
-    flex-wrap: nowrap;
-    margin-bottom: 13rem; }
+    flex-wrap: nowrap; }
   .imagenMentor1,
   .imagenMentor2,
   .imagenMentor3,
@@ -270,16 +291,13 @@ footer p {
   .parrafoSub {
     margin-top: 15px; }
   .staff_box {
-    margin-bottom: 15rem; }
+    margin-bottom: 10rem; }
   .textAlign {
     margin-top: 15px; }
-  footer {
-    flex-wrap: nowrap; }
-    footer p {
-      color: black;
-      font-weight: bold; }
   .clasesSection {
-    margin-bottom: 10rem; } }
+    margin-bottom: 10rem; }
+  .socialMediaIcons {
+    z-index: 2; } }
 
 /*MOVIL Queries*/
 @media screen and (max-width: 480px) {
@@ -321,7 +339,7 @@ footer p {
   .sectionContacto {
     margin-bottom: 14rem; }
   .nosotros_Box {
-    margin-bottom: 14rem;
+    margin-bottom: 13rem;
     padding-top: 10%; }
   #inscripcion {
     padding-top: 5%; }
