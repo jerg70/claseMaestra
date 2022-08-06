@@ -1,0 +1,8 @@
+[
+    {"nombre": "Meme", "area": "Produccion Musical","costo": 6000},
+    {"nombre": "Lalo Rivera", "area": "Ingenieria de Audio","costo": 4000},
+    {"nombre": "Elias Ayub", "area": "Negocios","costo": 3000},
+    {"nombre": "Mike Glez", "area": "Canto","costo": 7000},
+    {"nombre": "Mario Castillo", "area": "Programacion","costo": 2500},
+    {"nombre": "Jorge Puente", "area": "Leyes Fiscales","costo": 1300}
+]

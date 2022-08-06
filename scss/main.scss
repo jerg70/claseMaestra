@@ -312,8 +312,43 @@ footer p {
     width:250px;
     height:250px;
 }
+//Anexo de Codigo CSS Pagina: Cotizar
+.tituloCotizar{
+    margin-left: 50%;
+    font-size:x-large;
+    font-weight: bold;
+}
 
-/*TABLET - Medi Queries*/
+#fondoAzul{
+    background-color: blue;
+}
+
+#fondoVerde{
+    background-color: green;
+}
+
+#fondoAmarillo{
+    background-color: yellow;
+}
+
+#fondoRandom{
+    background-color: transparent;
+}
+
+#textAreaHistorial,#textAreaInfo{
+    width: fit-content;
+    height: 250px;
+    width: 700px;
+}
+
+.container_form_cotizar {
+    display: block;
+    padding: 5%;
+    margin:auto;
+    text-align: left;
+}
+
+/*TABLET - Media Queries*/
 @media screen and (max-width:768px) and (min-width:481px) {
 
     .videoDemo,.videoDemo2{
