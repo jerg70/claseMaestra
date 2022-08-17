@@ -263,10 +263,20 @@ footer p {
   width: 250px;
   height: 250px; }
 
-.tituloCotizar {
-  margin-left: 50%;
-  font-size: x-large;
+.contenedorCotizar, .contenedorCotizar2 {
+  margin: 2%;
+  padding: 2%; }
+
+ul li {
+  color: white;
   font-weight: bold; }
+
+.infoMentor {
+  text-align: left;
+  text-justify: auto; }
+
+.titulosMentores {
+  margin-right: 50%; }
 
 #fondoAzul {
   background-color: blue; }

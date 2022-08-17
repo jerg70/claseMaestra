@@ -312,11 +312,33 @@ footer p {
     width:250px;
     height:250px;
 }
+
+
 //Anexo de Codigo CSS Pagina: Cotizar
-.tituloCotizar{
-    margin-left: 50%;
-    font-size:x-large;
-    font-weight: bold;
+
+.contenedorCotizar{
+    margin: 2%;
+    padding: 2%;
+}
+
+.contenedorCotizar2{
+    @extend .contenedorCotizar;
+}
+
+ul {
+    li {
+        color: white;
+        font-weight: bold;
+    }
+}
+
+.infoMentor{
+    text-align: left;
+    text-justify:auto;
+}
+
+.titulosMentores{
+    margin-right:50%;
 }
 
 #fondoAzul{
