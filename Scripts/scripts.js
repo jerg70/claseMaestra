@@ -26,7 +26,7 @@ function ordenarNombres(){
     let infoDiv = document.getElementsByClassName("infoMentor");
     let i = 0;
     for (const x of ordenarNombresArr) {
-        infoDiv[i].innerHTML = "<h3>"+x.nombre+"</h3><ul><li>Industria: "+x.area+"</li><li>Costo: $"+x.costo+"</li></ul>";
+        infoDiv[i].innerHTML = '<h3 class="titulosMentores">'+x.nombre+"</h3><ul><li>Industria: "+x.area+"</li><li>Costo: $"+x.costo+"</li></ul>";
         i++;
     }
 }
@@ -41,7 +41,7 @@ function ordenarCostos(){
     let infoDiv = document.getElementsByClassName("infoMentor");
     let i = 0;
     for (const x of ordenarCostosArr) {
-        infoDiv[i].innerHTML = "<h3>"+x.nombre+"</h3><ul><li>Industria: "+x.area+"</li><li>Costo: $"+x.costo+"</li></ul>";
+        infoDiv[i].innerHTML = '<h3 class="titulosMentores">'+x.nombre+"</h3><ul><li>Industria: "+x.area+"</li><li>Costo: $"+x.costo+"</li></ul>";
         i++;
     }
 }
@@ -155,7 +155,6 @@ fetch("../data/data.JSON")
 .then(resp => resp.json())
 .then(mentoresFetch => {
     mentoresFetch.forEach(mentorFetch => {
-        console.log("entró fetch"); //***PRUEBA PARA TUTOR: ENTRA A FETCH, Se comprueba en LOG ***
         let nombre = mentorFetch.nombre;
         let area = mentorFetch.area;
         let costo = mentorFetch.costo;
@@ -164,12 +163,9 @@ fetch("../data/data.JSON")
     });
 }).catch(error => console.log(error));
 
-console.log(arregloMentores); //***Se comprueba en consola que el arreglo se crea correctamente */
-
 //**** Termina USO DE FETCH EN PROYECTO Y QUEDA ALMACENADO CONTENIDO EN ARREGLO GLOBAL *****
 
 let nombreMentor = "";
-
 
 let textArea = document.getElementById("textAreaInfo");
 
@@ -203,7 +199,3 @@ let textArea2 = document.getElementById("textAreaHistorial");
 
 let btnHistorialUsuarios = document.getElementById("mostrarHistorial");
 btnHistorialUsuarios.addEventListener("click",mostrarHistorialUsuarios);
-
-
-
-

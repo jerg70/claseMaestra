@@ -21,7 +21,7 @@
         <div class="container-fluid">
           <a href="../index.html">
             <img src="https://static.wixstatic.com/media/715391_012eb58cca554e6fb4a1a759466fa996~mv2.png/v1/fill/w_1000,h_1000,al_c,usm_0.66_1.00_0.01/715391_012eb58cca554e6fb4a1a759466fa996~mv2.png" alt="Clase maestra Logo" class="navbar-brand imagenHeader"/>
-         </a>
+          </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -43,27 +43,25 @@
 <div class="row text-center contenedorCotizar"> <!-- Seccion : desgloce de info y filtros -->
 
 
-  <h1 class="tituloCotizar">Cotizar Clase</h1>
+  <h1 class="col-lg-12 col-md-12 col-sm-12 tituloCotizar">Cotizar Clase</h1>
 
-  <h2 class="subCotizar">Información de las mentorias</h2>
+  <h2 class="col-lg-12 col-md-12 col-sm-12 subCotizar">Información de las mentorias</h2>
 
-  <div class="col-lg-12 col-md-8 col-sm-12">
-      <button id="ordenarNombre" class="btn-info">Ordenar por Nombre</button>
-      <button id="ordenarCosto" class="btn-info">Ordenar por Precio</button>
-      <button id="limpiarFondo" class="btn-info">Reset Fondo</button>
-      <button id="limpiarStorage" class="btn-info">Reset Usuarios Sesión</button>
-      <button id="limpiarStorageLocal" class="btn-info">Reset All Storage</button>
-      <!-- <button id="historialDeUsuarios">Historial Usuarios</button> -->
+  <div class="col-lg-12 col-md-12 col-sm-12 botonesGroupCotizar">
+      <button id="ordenarNombre" class="btn-secondary btn-lg botonMobile">Ordenar por Nombre</button>
+      <button id="ordenarCosto" class="btn-secondary btn-lg botonMobile">Ordenar por Precio</button>
+      <button id="limpiarFondo" class="btn-secondary btn-lg botonMobile">Reset Fondo</button>
+      <button id="limpiarStorage" class="btn-secondary btn-lg botonMobile">Reset Usuarios Sesión</button>
+      <button id="limpiarStorageLocal" class="btn-secondary btn-lg botonMobile">Reset All Storage</button>
   </div>
 
   <div class="row listaDeInfoMentores" id="fondoRandom"> 
       
       <div class="row col-lg-12 col-md-12 col-sm-12 text-left infoMentor">
       
-          <h3 clas="titulosMentores">Meme</h3>
+          <h3 class="titulosMentores">Meme</h3>
           
           <ul>
-              
               <li>Industria: Producción Musical</li>
               <li>Costo: $6,000</li>
           </ul>
@@ -71,7 +69,7 @@
 
       <div class="row col-lg-12 col-md-12 col-sm-12 text-left infoMentor">
 
-          <h3 clas="titulosMentores">Lalo Rivera</h3>
+          <h3 class="titulosMentores">Lalo Rivera</h3>
 
           <ul>
           <li>Industria: Ingeniería de Audio</li>
@@ -79,20 +77,18 @@
           </ul>
       
       </div>
-      <h3 clas="titulosMentores">Elias Ayub</h3>
-      <div class="row col-lg-12 col-md-12 col-sm-12 text-left infoMentor">
 
-          
+      <div class="row col-lg-12 col-md-12 col-sm-12 text-left infoMentor">
+          <h3 class="titulosMentores">Elias Ayub</h3>
 
           <ul>
           <li>Industria: Negocios</li>
           <li>Costo: $3,000</li>
           </ul>
-
       </div>
 
       <div class="row col-lg-12 col-md-12 col-sm-12 text-left infoMentor">
-          <h3 clas="titulosMentores">Mike Glez</h3>
+          <h3 class="titulosMentores">Mike Glez</h3>
 
           <ul>
           <li>Industria: Canto</li>
@@ -102,7 +98,7 @@
       
       <div class="row col-lg-12 col-md-12 col-sm-12 text-left infoMentor">
 
-          <h3 clas="titulosMentores">Mario Castillo</h3>
+          <h3 class="titulosMentores">Mario Castillo</h3>
 
           <ul>
           <li>Industria: Programación</li>
@@ -113,25 +109,23 @@
       <div class="row col-lg-12 col-md-12 col-sm-12 text-left infoMentor">
 
       
-          <h3 clas="titulosMentores">Jorge Puente</h3>
+          <h3 class="titulosMentores">Jorge Puente</h3>
 
           <ul>
           <li>Industria: Leyes Fiscales</li>
           <li>Costo: $1,300</li>
           </ul>
-      
       </div>
   </div>
 </div>    
 
 <div clas="row contenedorCotizar2"> <!-- Seccion : Cotizador -->
   <form class="col-lg-6 col-md-8 col-sm-12 container_form_cotizar">
-      
 
       <div class="form-group">
-      <label for="Mentores">Cotiza tu Mentor</label>
+      <label for="Mentores" class="tituloFormCotizar">Cotiza tu Mentor</label>
 
-      <select id="mentoresListForm" name="Mentores">
+      <select id="mentoresListForm" class="form-control" name="Mentores">
           <option disabled selected value>-- seleccione una opcion --</option>
           <option value="Meme" class="mentoresListItem">Meme</option>
           <option value="Lalo Rivera" class="mentoresListItem">Lalo Rivera</option>
@@ -143,19 +137,19 @@
       </div>
 
       <div class="form-group">
-          <textarea readonly id="textAreaInfo"></textarea>
+          <textarea readonly id="textAreaInfo" class="form-control form-control-lg"></textarea>
       </div>
-      <button id="cotizarMentor" type="button">Cotizar</button>
+      <button id="cotizarMentor" class="btn btn-info" type="button">Cotizar</button>
 
       <div class="form-group">
-          <textarea readonly id="textAreaHistorial"></textarea>
+          <textarea readonly id="textAreaHistorial" class="form-control form-control-lg"></textarea>
       </div>
 
       <button id="mostrarHistorial" class="btn btn-info" type="button">Historial Usuarios</button>
   </form>
 </div>
 
-    <footer class="row">
+<footer class="row">
       <p class="col-lg-12 col-md-12 col-sm-12 text-center">Copyright: Clase Maestra 2022</p>
       <div class="socialMediaIcons col-lg-1 col-md-12 col-sm-12 mx-auto d-flex flex-row justify-content-center">
       <a href="https://www.facebook.com/MasterClassOfficial/" target="_blank">
@@ -175,7 +169,7 @@
       </svg>
       </a>
       </div>
-    </footer>
+</footer>
     
     <script src ="../Scripts/luxon.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>

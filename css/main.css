@@ -263,29 +263,39 @@ footer p {
   width: 250px;
   height: 250px; }
 
-.contenedorCotizar, .contenedorCotizar2 {
+.contenedorCotizar {
   margin: 2%;
-  padding: 2%; }
+  padding: 10px;
+  margin-bottom: -20px; }
+
+.contenedorCotizar2 {
+  margin-bottom: 100px; }
+
+.botonesGroupCotizar {
+  margin-top: 100px;
+  padding: 5px; }
+
+.subCotizar {
+  margin-top: 20px; }
 
 ul li {
   color: white;
-  font-weight: bold; }
+  font-weight: bold;
+  font-size: large; }
 
 .infoMentor {
   text-align: left;
-  text-justify: auto; }
-
-.titulosMentores {
-  margin-right: 50%; }
+  text-justify: auto;
+  padding: 2%; }
 
 #fondoAzul {
-  background-color: blue; }
+  background-color: #790606; }
 
 #fondoVerde {
   background-color: green; }
 
 #fondoAmarillo {
-  background-color: yellow; }
+  background-color: black; }
 
 #fondoRandom {
   background-color: transparent; }
@@ -297,9 +307,17 @@ ul li {
 
 .container_form_cotizar {
   display: block;
-  padding: 5%;
+  padding: 1%;
   margin: auto;
   text-align: left; }
+
+#mentoresListForm {
+  width: 700px; }
+
+.tituloFormCotizar {
+  font-size: xx-large;
+  text-decoration-line: underline;
+  text-decoration-color: #0a8dda; }
 
 /*TABLET - Media Queries*/
 @media screen and (max-width: 768px) and (min-width: 481px) {
@@ -335,7 +353,16 @@ ul li {
   .clasesSection {
     margin-bottom: 10rem; }
   .socialMediaIcons {
-    z-index: 2; } }
+    z-index: 2; }
+  #textAreaHistorial, #textAreaInfo {
+    width: fit-content;
+    height: 200px;
+    width: 400px; }
+  #mentoresListForm {
+    width: 400px; }
+  #limpiarStorageLocal, #limpiarStorage {
+    margin-top: 10px;
+    padding: 10px; } }
 
 /*MOVIL Queries*/
 @media screen and (max-width: 480px) {
@@ -393,4 +420,23 @@ ul li {
     width: 300px;
     height: 300px; }
   .staff_box {
-    margin-bottom: 7rem; } }
+    margin-bottom: 7rem; }
+  .subCotizar {
+    font-weight: lighter; }
+  #textAreaHistorial, #textAreaInfo {
+    width: fit-content;
+    height: 200px;
+    width: 300px; }
+  #mentoresListForm {
+    width: 300px; }
+  .botonMobile {
+    display: block;
+    width: 100%;
+    margin: 5px;
+    border-radius: 10px; }
+  ul li {
+    font-size: medium; }
+  .titulosMentores {
+    text-decoration-line: underline !important;
+    text-decoration-color: white;
+    text-align: left; } }
