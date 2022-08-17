@@ -151,7 +151,7 @@ const arregloMentores = [];
 
 //**** Uso de FETCH en el proyecto: *****
 
-fetch("../data/data.JSON")
+fetch("../Data/data.JSON")
 .then(resp => resp.json())
 .then(mentoresFetch => {
     mentoresFetch.forEach(mentorFetch => {
